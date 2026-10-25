@@ -1,0 +1,208 @@
+{
+  "version": 2,
+  "generator": "built-in image_gen; no API key",
+  "assets": [
+    {
+      "name": "jungle-backdrop",
+      "prompt": "Use case: stylized-concept. Asset type: production game background, wide 16:9 landscape. Create an original premium family-adventure jungle world, polished stylized 3D with hand-painted materials, lush dimensional leaves, warm golden shafts of light, atmospheric teal distance, rich wood and stone, charming ancient tropical ruins. Camera faces forward down a broad inviting trail. Fixed vanishing point at horizontal center, 32% down the image. Wide clear center/lower-middle play area for webcam participants and interactive objects. Dense beautifully detailed giant trees and foliage concentrated at left/right edges, layered distant canopy and soft mist; no foreground characters, no collectible objects, no writing, no logos, no interface, no border. Professional animated-feature game art with sophisticated lighting and tactile material detail, coherent readable shapes, not vector art or flat clipart. Background should be beautiful at TV scale and leave center unobstructed. Full bleed landscape, 16:9.",
+      "source": "art-source/worlds-v2/jungle-backdrop-source.png",
+      "sha256": "326ff6529549f9115502f8dc3d7d4e70d64b15bec2835c06eca49f6f91414e2e",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "depths-backdrop",
+      "prompt": "Use case: stylized-concept. Production raster art for the same original premium family-adventure game. Polished stylized 3D with hand-painted tactile materials, sophisticated dimensional lighting, readable shapes, animated-feature quality. No writing, text, logos, watermark or interface. Not flat vector or clipart. Wide 16:9 full-bleed underwater world. Camera faces forward down a broad pale sandy ocean-floor trail toward a luminous distant coral arch and ancient pearl-like ruins. Majestic colorful corals, waving kelp and rounded rocks frame far left/right edges. Aquamarine sun shafts from surface, blue-teal atmospheric distance, pink/lavender coral accents, gentle magical ocean wonder. Broad clear central/lower play area for webcam participants. No animals or collectible objects. Fixed centered vanishing point and wide ground plane.",
+      "source": "art-source/worlds-v2/depths-backdrop-source.png",
+      "sha256": "fc0f03985c1ee56721de209913c704f1552d5eddf2899f97df88610c4210ab03",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "space-backdrop",
+      "prompt": "Use case: stylized-concept. Production raster art for the same original premium family-adventure game. Polished stylized 3D with hand-painted tactile materials, sophisticated dimensional lighting, readable shapes, animated-feature quality. No writing, text, logos, watermark or interface. Not flat vector or clipart. Wide 16:9 full-bleed whimsical alien planet space world. Camera faces forward down a broad elegant metallic/glowing causeway toward a distant friendly futuristic outpost. Huge ringed planet in indigo sky, softly glowing nebulae, distant fantastical purple rock arches, turquoise crystals and alien flora framing left/right edges. Warm peach horizon with cool violet/teal foreground; dimensional cinematic lighting. Broad unobstructed central/lower playable road for webcam participants. No characters, no vehicles in foreground, no collectible objects.",
+      "source": "art-source/worlds-v2/space-backdrop-source.png",
+      "sha256": "1095da247fd11b342529ebfc561ed52e7acb48be11efb2b82e38be0a331808c7",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "jungle-foreground",
+      "prompt": "Use case: stylized-concept. Production raster art for the same original premium family-adventure game. Polished stylized 3D with hand-painted tactile materials, sophisticated dimensional lighting, readable shapes, animated-feature quality. No writing, text, logos, watermark or interface. Not flat vector or clipart. Transparent-background landscape foreground scenery overlay, 16:9. Lush dimensional jungle foliage: one separate bank of emerald tropical leaves, curling vines and mossy stone at lower left edge, matching separate bank at lower right edge, a few hanging leaves at upper corners. At least middle 70% completely empty transparent, upper middle transparent. No ground plane, no sky, no opaque backdrop, no characters, no text. Beautiful golden rim light from upper left, detailed painted 3D leaves, strong separated shapes. Full real alpha transparency.",
+      "source": "art-source/worlds-v2/jungle-foreground-source.png",
+      "sha256": "579c9551c9027cf6db5c242e65729d62b60aaba6340a901b7d29853a8284c1a5",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "depths-foreground",
+      "prompt": "Use case: stylized-concept. Production raster art for the same original premium family-adventure game. Polished stylized 3D with hand-painted tactile materials, sophisticated dimensional lighting, readable shapes, animated-feature quality. No writing, text, logos, watermark or interface. Not flat vector or clipart. Transparent-background landscape foreground scenery overlay, 16:9. Dimensional underwater coral gardens: one separate bank of turquoise kelp, soft pink branching coral and pearl-encrusted rounded rocks at bottom left edge, another at bottom right edge, subtle seaweed at side edges. At least middle 70% completely empty transparent, upper middle transparent. No sea floor, no water backdrop, no animals, no text. Aquamarine caustic rim light from upper left, detailed painted 3D coral materials. Full real alpha transparency.",
+      "source": "art-source/worlds-v2/depths-foreground-source.png",
+      "sha256": "0da442d7d5bd433c3a07ae9dd0fbf7cc0460024bb23cb4f6f545b54d8e26beb0",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "space-foreground",
+      "prompt": "Use case: stylized-concept. Production raster art for the same original premium family-adventure game. Polished stylized 3D with hand-painted tactile materials, sophisticated dimensional lighting, readable shapes, animated-feature quality. No writing, text, logos, watermark or interface. Not flat vector or clipart. Transparent-background landscape foreground scenery overlay, 16:9. Dimensional alien landscape: separate banks of violet rounded rocks, luminous cyan faceted crystals and tiny gold glowing alien plants at bottom left and bottom right extreme edges. At least middle 70% empty transparent, upper middle completely transparent. No ground plane, sky, planets, opaque backdrop, characters or text. Cool cyan rim lighting and warm peach edge highlights, polished tactile painted 3D materials. Full real alpha transparency.",
+      "source": "art-source/worlds-v2/space-foreground-source.png",
+      "sha256": "9a356a32ef082da2ca4b177e2ef45184026fd493a367cd986edb3a1b0648b7d2",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "name": "depths-route",
+      "prompt": "Square seamless game terrain texture, directly overhead, edge-to-edge pale ivory underwater sand with gently sculpted ripple ridges and subtle soft aquamarine caustic highlights. Premium painted 3D family adventure art, detailed tactile fine sand, soft even light. No perspective, animals, plants, objects, text, border or watermark. Repeatable top/bottom and left/right tile. Restrained low-contrast surface.",
+      "source": "art-source/worlds-v2/depths-route-source.png",
+      "sha256": "ccbd48c9a257672ec3627f60795f34fd559a90bf2f902a440487c6d59cdbc3bc",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "name": "space-route",
+      "prompt": "Square seamless game terrain texture, directly overhead: elegant lavender-blue brushed metal causeway panels with subtle rounded seams and very faint cyan light accents. Premium painted 3D family-adventure materials, softly worn satin metal with warm peach reflections, even illumination. No perspective, objects, characters, writing, labels, logos, border or watermark. Repeatable edges, low contrast, no bright flashing-looking elements.",
+      "source": "art-source/worlds-v2/space-route-source.png",
+      "sha256": "5a72a5557ef3c830fcc7886e4af2dcf19785e6e8c5a2468c9640f6b3a7517bc8",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "name": "depths-collectibles",
+      "prompt": "Production transparent raster game prop board. Exactly three separate objects evenly spaced in ONE horizontal row: left a luminous ivory pearl resting in a small open pink shell; center a golden-orange softly textured starfish; right a beautiful translucent turquoise orb with gentle iridescence. Each fully visible inside its own third with broad empty margins, no overlap. Premium stylized painted 3D family-adventure game art, dimensional materials, soft upper-left aquamarine light, readable sculpted silhouettes. True alpha transparency, no background, ground shadow, text, grid lines, logo or watermark.",
+      "source": "art-source/worlds-v2/depths-collectibles-source.png",
+      "sha256": "950f4bb68a369511504a1ac5583a08eefe7f81cd7620777449b012e45219575f",
+      "width": 1968,
+      "height": 799
+    },
+    {
+      "name": "space-collectibles",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape board of exactly three objects in one row: left rounded gold-and-lavender energy capsule with glowing cyan core; middle faceted turquoise crystal shard; right small beautiful ringed lavender planet collectible with gold ring. Sculpted readable silhouettes, polished dimensional reflections, each entirely inside its own third, no overlap.",
+      "source": "art-source/worlds-v2/space-collectibles-source.png",
+      "sha256": "6b11d21528bf509f65daa0aeab916926aac0e7a4bece634ca1ab1c5f56577915",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "space-character",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Square four-pose sprite sheet of the SAME original charming alien explorer in a small pearl-white and lavender space suit, green oval face behind clear round helmet, two little antennae, large friendly eyes. Strict 2 by 2 layout: top-left relaxed standing, top-right pointing and presenting an object with empty hand, bottom-left both arms raised cheering, bottom-right relaxed standing with closed-eye blink. Consistent identity, proportions, lighting and scale. Full helmet, boots and hands visible in each cell with broad transparent margins. Wholesome friendly fantasy mascot.",
+      "source": "art-source/worlds-v2/space-character-source.png",
+      "sha256": "f7158a1290abadc89a6d9b40d6b0bc13347e5aee41bb75b2ccd0faaad1e7d3ec",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "name": "depths-character",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Square four-pose sprite sheet of the SAME friendly rounded turquoise reef shark character with big kind eyes, cream belly, small smiling mouth and soft rounded fins. 2 by 2 layout. Top-left relaxed swimming pose facing right, top-right turning slightly toward viewer and gesturing with fin, bottom-left joyful upward loop pose, bottom-right relaxed swimming pose with eyes closed for blink. Full animal silhouette in every cell, consistent scale and proportions, complete tail and fins. Charming original aquatic mascot.",
+      "source": "art-source/worlds-v2/depths-character-source.png",
+      "sha256": "cc37b8d86548d94969d85c7b83188a1de01a0d244c967747390e24055502c2ad",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "name": "depths-obstacles",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape board of exactly three separate safe playful underwater game props in one row. Left a gently curved horizontal pink coral branch for ducking, broad and low; center a short horizontal rounded ancient stone reef beam, for stepping over; right a plump iridescent blue jellyfish with short soft tentacles for sidestepping. Each occupies its own third with clear transparent gutters. Dimensional polished textures and softly lit turquoise/coral palette.",
+      "source": "art-source/worlds-v2/depths-obstacles-source.png",
+      "sha256": "d089e2d775afc48d7810ad96cfe482ea7d4b297bccb70db72cf483a9493ab0a5",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "space-obstacles",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape board of exactly three separate playful science-fiction game props in one row. Left a broad low hovering silver-lavender saucer with a cyan dome, overhead obstacle; middle a low horizontal pearl-white mechanical beam with small blue lights, stepping obstacle; right a chunky rounded purple asteroid with dimensional rock craters, sidestep obstacle. Friendly family-adventure designs, no weapons, each entirely inside its own third.",
+      "source": "art-source/worlds-v2/space-obstacles-source.png",
+      "sha256": "1655303814ece653d62026f632f78bf188c67ca602951b82cb649f2d3cb094bf",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "depths-midground",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape scenery board exactly three separate objects in a row: left turquoise ribbon-kelp cluster attached to small rock; middle elegant short pearl-colored ancient column with pink coral; right lush layered purple and salmon coral garden on a rounded rock. Each fully visible inside its own third, no ground plane, sculpted depth and soft aquamarine light.",
+      "source": "art-source/worlds-v2/depths-midground-source.png",
+      "sha256": "8c6076a3384ef2fea276a22cf4d010d0206852726a6cbff8548e75a7ab61ba13",
+      "width": 1942,
+      "height": 809
+    },
+    {
+      "name": "space-midground",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape scenery board exactly three separate objects in a row: left cluster of glowing cyan crystals on rounded violet rock; middle short elegant curved silver alien beacon with a small amber lamp; right fantastical broad-leaf blue alien plant with tiny pink luminous buds. Each fully visible inside its own third, rich dimensional painted materials, no ground plane.",
+      "source": "art-source/worlds-v2/space-midground-source.png",
+      "sha256": "54a55b9ce7ad9fc1697f301cba2b7f5763e5be80a9581aee4612f319834bb4b3",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "depths-distant",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape sprite board of exactly three separate distant sea-life groups in one row: left small school of five slender turquoise fish swimming right; center a graceful friendly sea turtle swimming right; right a small graceful manta ray gliding right. Consistent dimensional painted game-art finish, softly lit aquatic colors, each group fully inside its own third. Clear separate silhouettes, no ocean background.",
+      "source": "art-source/worlds-v2/depths-distant-source.png",
+      "sha256": "f6433a802c7132efbba22fb2cdefb0a9e354de78ebe2f285ec90a5d87fd54887",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "space-distant",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape sprite board of exactly three separate original distant spacecraft in one row: left elegant small silver exploration glider with cyan engines; middle rounded lavender floating research pod with small gold lights; right a tiny three-ship formation of friendly ivory shuttles. No weapons or battle, rich dimensional painted game-art finish, each group fully inside its own third.",
+      "source": "art-source/worlds-v2/space-distant-source.png",
+      "sha256": "cdbe8399058fab8f33653c6f867cd5be42eb286c3b6c3a9aa32393a8b13c62b1",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "jungle-distant",
+      "prompt": "Original premium stylized 3D family-adventure game asset, beautifully hand-painted tactile materials and soft upper-left key light. True transparent alpha background; no scenery, text, labels, grid, logo or watermark. Each object is separate with generous empty gutters. Wide landscape sprite board of exactly three separate original tropical bird groups in one row: left a colorful teal-and-gold macaw flying right with wings raised; middle the same style macaw flying right with wings lowered; right three small golden tropical butterflies. Beautiful detailed dimensional painted feathers, no setting or branches. Each group fully inside its own third.",
+      "source": "art-source/worlds-v2/jungle-distant-source.png",
+      "sha256": "419e1e82c1ee8b7532b16ad3e91953548ec0f971ab81f595b4143e44de42516e",
+      "width": 1993,
+      "height": 789
+    },
+    {
+      "name": "jungle-route",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Square seamlessly repeating top-down ground texture for a moving jungle path: warm weathered sandstone pavers interspersed with earthy moss, small organic irregularities, flat even lighting without perspective or a horizon. Tileable edges, no large objects or plants, restrained contrast, richly painted material detail.",
+      "source": "art-source/worlds-v2/jungle-route-source.png",
+      "sha256": "a9ee517f5d06ee1758816a93e753f0762f5c516c79921ce6f9ddd008be88c264",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "name": "jungle-midground",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Transparent sprite board, three separate objects in one horizontal row with wide transparent gutters and all edges contained: mossy jungle tree trunk with curling vine and leafy crown; crumbling golden sandstone arch fragment; lush fern and broad-leaf shrub. Each independent cutout, no ground plane. Emerald and amber palette.",
+      "source": "art-source/worlds-v2/jungle-midground-source.png",
+      "sha256": "c670c5c2dca478ba15060ea5811147374ad5242f9c760375ee46434a1e87b2e5",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "jungle-collectibles",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Transparent sprite board, three separate collectible objects in a horizontal row with generous clear gutters: curved golden banana bunch with bright polished peel; faceted amber jungle gem in a leaf setting; luminous turquoise seed pod with warm golden rim. Each self-contained with entire silhouette visible, similar size, chunky appealing shapes, emerald/amber lighting, no characters.",
+      "source": "art-source/worlds-v2/jungle-collectibles-source.png",
+      "sha256": "31a03d64172f4a23c511a34f0db891ceca1b002b119f0c27087ba522cf7fc267",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "jungle-obstacles",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Transparent sprite board, three separate soft playful environment obstacles in a horizontal row with ample clear gutters, full silhouettes contained: thick moss-covered horizontal jungle branch with hanging leaves for ducking; low rounded fallen log with moss for stepping over; round dangling vine-wrapped seed ball for sidestepping. Friendly nonthreatening chunky forms, dimensional wood and leaves, no ground, emerald and amber palette.",
+      "source": "art-source/worlds-v2/jungle-obstacles-source.png",
+      "sha256": "c96da93c49a6aa4c6c441e9303c9a47a926d5ad4360b6c5552d98e09b82b3b14",
+      "width": 2048,
+      "height": 768
+    },
+    {
+      "name": "shared-atmosphere",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Transparent texture board, three separate subtle atmospheric overlays in a horizontal row with wide gutters: wispy horizontal pale teal mist ribbon with very soft transparent edges; soft underwater sun shafts with faint cyan caustic flecks; small diffuse indigo nebula dust cloud with sparse warm gold motes. Gentle gradients, genuinely soft translucent alpha, no opaque background, no bright flash. Wide landscape.",
+      "source": "art-source/worlds-v2/shared-atmosphere-source.png",
+      "sha256": "0b24a4a239ae8ff9ad217c8ae79e84efe44428610747da765abfab29b8494202",
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "name": "shared-celebration",
+      "prompt": "Original premium stylized 3D family-adventure game asset, tactile hand-painted materials, dimensional upper-left key lighting, clean readable silhouettes, consistent animated-feature art direction. No text, logos, interface, watermark, humans or franchise characters. Transparent effects sprite board, three separate crisp celebratory effects in a horizontal row with wide gutters: compact curling golden leaf sparkle burst; elegant turquoise pearl bubble burst; violet and cyan star shimmer burst. Soft dimensional glow, restrained small particle count, empty transparent center for readable gameplay, no opaque backing, each effect fully contained.",
+      "source": "art-source/worlds-v2/shared-celebration-source.png",
+      "sha256": "178152c60ffcbdfeab4cc941cc2d45df7f3b8e8c863400881bf109edc2b74e74",
+      "width": 2172,
+      "height": 724
+    }
+  ],
+  "runtimeStatus": "Integrated: 59 optimized runtime assets; see runtime manifest and docs/MOTION-RASTER-VALIDATION.md.",
+  "limitation": "Monkey sprite output was rejected twice by built-in generation moderation, category other; request stopped. Jungle uses original blue-and-gold macaw with two wing poses. No monkey sprite or separately articulated monkey rig delivered."
+}

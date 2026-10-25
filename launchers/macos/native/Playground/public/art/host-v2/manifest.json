@@ -1,0 +1,108 @@
+{
+  "version": 2,
+  "description": "Original generated character, separately articulated eyes, brows and jaw. Generated source and prompts in art-source/host-v2.",
+  "assets": [
+    {
+      "name": "stage",
+      "source": "host-stage-source.png",
+      "crop": null,
+      "width": 1672,
+      "height": 941,
+      "bytes": 459040,
+      "sha256": "c03bd6282be0b2934ca185902eafc7949c18b5acec1c7855d342140bc3c499a2"
+    },
+    {
+      "name": "head",
+      "source": "host-rig-head-source.png",
+      "crop": null,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 451040,
+      "sha256": "5cdb0a996526984fa07a5e5d0ba151e08d622cce28678ecba47269e6b5cbd6ab"
+    },
+    {
+      "name": "eye-left",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        70,
+        245,
+        295,
+        402
+      ],
+      "width": 225,
+      "height": 157,
+      "bytes": 14756,
+      "sha256": "3ad463b5528f4eb8edb1a2ebbdd4aea64f74b66d78c66ecab9dec4d8374a5daa"
+    },
+    {
+      "name": "eye-right",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        330,
+        245,
+        555,
+        402
+      ],
+      "width": 225,
+      "height": 157,
+      "bytes": 14456,
+      "sha256": "5423255a88b5b617c05e7e49060a05cbd769ea395c363f8666297d21a96c3734"
+    },
+    {
+      "name": "brow-left",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        600,
+        205,
+        930,
+        395
+      ],
+      "width": 330,
+      "height": 190,
+      "bytes": 24790,
+      "sha256": "998815e34d932fd99f4bd4f225a9fdfba978c9cb1aed9f219b814693d50a42f9"
+    },
+    {
+      "name": "brow-right",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        940,
+        205,
+        1254,
+        395
+      ],
+      "width": 314,
+      "height": 190,
+      "bytes": 23138,
+      "sha256": "f0abca583d9b12df16834def0c76e20b7bb903dc974e30f0245f68d6d345740c"
+    },
+    {
+      "name": "jaw",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        22,
+        650,
+        598,
+        1185
+      ],
+      "width": 576,
+      "height": 535,
+      "bytes": 85944,
+      "sha256": "20aef9fe66da5f81aa05d74beb3fa34db5250d41728ef5df6faed4720d044d68"
+    },
+    {
+      "name": "collar",
+      "source": "host-rig-parts-source.png",
+      "crop": [
+        570,
+        650,
+        1254,
+        1180
+      ],
+      "width": 684,
+      "height": 530,
+      "bytes": 122194,
+      "sha256": "0b82024acb1819614be5bae52ad591d970084cc7bbb1577e34ff5295d0bb354f"
+    }
+  ]
+}

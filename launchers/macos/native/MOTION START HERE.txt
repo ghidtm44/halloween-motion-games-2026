@@ -1,0 +1,15 @@
+SIMPLE PLAYGROUND — MOTION GAMES
+
+Open Play Motion Games.app on the Desktop. The app starts its own local server and opens the control room and player in Google Chrome.
+
+The three worlds are Escape from Monkey Island, Escape from Shark Depths, and Alien Attack. Choose any world in the control room; changing scenes keeps the game and tracking running. Touch large glowing collectibles with either hand, gently duck or step aside from obstacles, or make a small rise from a knee bend for low hurdles. Enjoy brief celebrations. The road keeps moving with nobody in frame; one large challenge appears at a time with space between them. No running or high jumps are needed. There are no rounds or scores.
+
+Choose Start camera and a Video input in the control room when ready. Give up to three people room, with their full bodies visible. Check Mirror camera against the screen. Camera overlay is the fallback if cutouts miss costumes or overlapping people.
+
+Move the player to your TV and click the scene, or press F, for fullscreen. Esc exits. The TV has no text or controls. Keep the control room on the Mac. Pause, Stop camera, world selection and manual celebrations are available there.
+
+This edition is entirely local and offline after installation. It never reads your Spooky Host key, requests microphone input or uses a paid API. Your Spooky Host and Corn Maze apps remain separate. Stop one app's camera before using another.
+
+Use Quit Playground in the native launcher to stop its server. Closing the launcher window only hides it. Settings are in ~/Library/Application Support/Simple Playground Motion Games. Its local address uses port 4328.
+
+Rehearse with your actual TV, camera, lighting and costumes before the event. Automated tests use synthetic inputs and do not prove real tracking accuracy or HDMI alignment.

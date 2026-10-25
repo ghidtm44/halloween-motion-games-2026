@@ -1,0 +1,17 @@
+HALLOWEEN PLAYGROUND
+
+Double-click Start Simple Playground.command for the original V1 experience:
+people in three scenes, magic when waving, bats with hands up, candy for a small hop.
+
+Click Open player, then Start camera when you are ready. Keep the Terminal window open.
+The Simple control room is http://127.0.0.1:4318 while its launcher runs.
+
+Double-click Start Corn Maze.command to open the preserved newer app.
+Choose Corn Maze Quest in its control room. Its address is http://127.0.0.1:4317.
+
+Stop the camera in one version before using the other. Stop a launcher with Control-C.
+Keep the Simple Playground V1 folder with its launcher. The Corn Maze launcher points
+to the existing project under Documents/Codex; that project has not been moved or changed.
+
+Both versions have local vision assets and need no internet to play after setup.
+Live webcam, 2-3 people, costumes, and TV performance still need your in-person rehearsal.

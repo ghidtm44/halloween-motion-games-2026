@@ -1,0 +1,30 @@
+// Full operator/player/audio integration with fake camera and synthetic PCM/provider.
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+import {mkdtemp,rm,mkdir,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {createPlaygroundServer} from '../server.mjs';
+const rate=16000,count=16000,wav=Buffer.alloc(44+count*2);wav.write('RIFF');wav.writeUInt32LE(wav.length-8,4);wav.write('WAVEfmt ',8);wav.writeUInt32LE(16,16);wav.writeUInt16LE(1,20);wav.writeUInt16LE(1,22);wav.writeUInt32LE(rate,24);wav.writeUInt32LE(rate*2,28);wav.writeUInt16LE(2,32);wav.writeUInt16LE(16,34);wav.write('data',36);wav.writeUInt32LE(count*2,40);for(let i=0;i<count;i++)wav.writeInt16LE(Math.sin(i*2*Math.PI*220/rate)*7000,44+i*2);
+const temp=await mkdtemp(join(tmpdir(),'host-rescue-')),intents=[],checks=[],errors=[],external=[];
+const app=await createPlaygroundServer({port:0,stateFile:join(temp,'state.json'),hostOptions:{apiKey:'synthetic-fixture',provider:async input=>{intents.push(input.intent);return {text:input.intent==='farewell'?'Honorary Moonlight Mischief Council, farewell!':input.intent==='challenge-invite'?(input.gesture==='pose'?'If you fancy it, raise both arms in triumph.':'If you fancy it, raise a hand for a royal wave.'):'Your silver cape has its own lighting department.',audio:{mime:'audio/wav',base64:wav.toString('base64')}};}}});
+const base=`http://127.0.0.1:${app.port}`,snapshot=()=>fetch(base+'/api/state').then(r=>r.json());let browser;
+try{
+ browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{channel:'chrome'}),headless:true,args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
+ const context=await browser.newContext({permissions:['camera']});
+ await context.route('**/*',r=>{const u=r.request().url();if(!u.startsWith(base)&&!u.startsWith('blob:')&&!u.startsWith('data:')){external.push(u);return r.abort();}return r.continue();});
+ await context.addInitScript(()=>{window.__outputNodes=new Set();const connect=AudioNode.prototype.connect,disconnect=AudioNode.prototype.disconnect;AudioNode.prototype.connect=function(...args){if(args[0] instanceof AudioDestinationNode)window.__outputNodes.add(this);return connect.apply(this,args);};AudioNode.prototype.disconnect=function(...args){window.__outputNodes.delete(this);return disconnect.apply(this,args);};});
+ context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
+ const admin=await context.newPage();await admin.goto(base);await admin.locator('[data-scene="spooky"]').click();const opened=context.waitForEvent('page');await admin.locator('#open-player').click();const player=await opened;await player.waitForLoadState();
+ await admin.locator('#camera-toggle').click();await expect(admin.locator('#camera-note')).toContainText('fake');await admin.locator('#host-control-mode').selectOption('operator');await player.locator('#stage').click();
+ await admin.locator('#host-speak').click();await expect.poll(()=>intents.length).toBe(1);await expect.poll(async()=>(await snapshot()).host.phase).toBe('ready');
+ await admin.locator('#host-challenge').click();await expect.poll(()=>intents.includes('challenge-invite'),{timeout:10000}).toBe(true);await expect(admin.locator('#host-note')).toContainText('Challenge open',{timeout:10000});
+ await expect.poll(async()=>(await snapshot()).host.message,{timeout:16000}).toContain('No clear gesture');assert.equal(intents.includes('challenge-payoff'),false);checks.push('Challenge invitation plays; uncertain synthetic pose times out without an invented response or extra generation');
+ await admin.locator('#host-farewell').click();await expect(admin.locator('#host-transcript')).toContainText('Moonlight Mischief',{timeout:10000});await expect.poll(async()=>(await snapshot()).host.phase).toBe('ready');await expect(admin.locator('#host-farewell')).toBeDisabled();await expect(admin.locator('#host-challenge')).toBeDisabled();await expect.poll(()=>player.locator('body').innerText()).toBe('');checks.push('Farewell plays once, disables repeated group cues, and keeps TV free of text');
+ await admin.locator('#host-welcome').click();await expect.poll(()=>intents.includes('welcome'),{timeout:10000}).toBe(true);await expect.poll(()=>player.evaluate(()=>window.__outputNodes.size)).toBe(1);
+ await admin.locator('#host-quiet').click();await expect.poll(()=>player.evaluate(()=>window.__outputNodes.size)).toBe(0);await expect(admin.locator('#host-resume')).toBeVisible();await expect(admin.locator('#host-speak')).toBeDisabled();await expect(admin.locator('#host-transcript')).toHaveText('');assert.equal((await snapshot()).host.quiet,true);checks.push('Quiet during actual PCM disconnects the output graph/tails, clears text and requires Resume');
+ await admin.locator('#host-resume').click();await expect.poll(async()=>(await snapshot()).host.quiet).toBe(false);await admin.locator('#host-control-mode').selectOption('auto');await admin.locator('#host-start').click();await expect.poll(()=>intents.length,{timeout:10000}).toBeGreaterThan(4);
+ await admin.locator('#host-quiet').click();const total=intents.length;await new Promise(r=>setTimeout(r,7000));assert.equal(intents.length,total);assert.equal((await snapshot()).host.active,false);checks.push('Quiet suppresses Auto and scene changes beyond the request cooldown; Resume is explicit');
+ await admin.locator('#camera-toggle').click();await context.close();assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+ const report={passed:true,checks,syntheticIntents:intents,externalRequests:external,browserErrors:errors,realCamera:false,realMicrophone:false,paidCalls:0};await mkdir('work',{recursive:true});await writeFile('work/host-rescue-browser.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+}finally{await browser?.close();await app.close();await rm(temp,{recursive:true,force:true});}

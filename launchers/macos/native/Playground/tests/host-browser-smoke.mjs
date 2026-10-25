@@ -1,0 +1,57 @@
+// Real browser + isolated local server, synthetic inputs, no AI credentials/calls.
+import {chromium,expect} from '@playwright/test';
+import {mkdtemp,rm,mkdir,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,resolve} from 'node:path';
+import {createPlaygroundServer} from '../server.mjs';
+const temp=await mkdtemp(join(tmpdir(),'spooky-browser-'));
+const app=await createPlaygroundServer({port:0,stateFile:join(temp,'state.json'),hostOptions:{apiKey:''}});
+const base=`http://127.0.0.1:${app.port}`,errors=[],external=[],checks=[];
+const snapshot=()=>fetch(base+'/api/state').then(r=>r.json());
+let browser;
+try {
+ browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{channel:'chrome'}),headless:true,args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
+ const context=await browser.newContext({viewport:{width:1440,height:1050},permissions:['camera']});
+ await context.route('**/*',route=>{const url=route.request().url();if(!url.startsWith(base)&&!url.startsWith('data:')&&!url.startsWith('blob:')){external.push(url);return route.abort();}return route.continue();});
+ context.on('page',page=>page.on('pageerror',e=>errors.push(e.message)));
+ const admin=await context.newPage();await admin.goto(base);await expect(admin.locator('#connection')).toContainText('ready');
+ await admin.locator('[data-scene="spooky"]').click();await expect(admin.locator('#host-panel')).toBeVisible();await expect(admin.locator('#host-control-mode')).toHaveValue('auto');await expect(admin.locator('#host-speak')).toBeDisabled();await expect(admin.locator('#host-start')).toBeVisible();
+ let state=await snapshot();if(state.host.active||state.settings.cameraOn)throw new Error('Selecting host activated session or camera');checks.push('Auto is offered by default; world selection leaves session and camera off');
+ const opened=context.waitForEvent('page');await admin.locator('#open-player').click();const player=await opened;await player.waitForLoadState();await player.setViewportSize({width:1280,height:720});
+ await expect(admin.locator('#host-start')).toBeEnabled();await expect(player.locator('#host-voice')).toBeHidden();
+ await expect.poll(()=>player.locator('body').innerText()).toBe('');
+ await player.evaluate(()=>{window.__stageTextCalls=0;const original=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(...args){if(this.canvas.id==='stage')window.__stageTextCalls++;return original.apply(this,args);};});
+ await admin.locator('#host-control-mode').selectOption('operator');
+ await admin.locator('#host-provider').selectOption('openai');await expect(admin.locator('#host-consent')).toBeVisible();await expect(admin.locator('#host-speak')).toBeDisabled();checks.push('missing-key fallback and explicit image/AI-voice notice');
+ await admin.locator('#host-provider').selectOption('mock');await admin.locator('#host-speak').click();
+ await expect(player.locator('#host-caption')).not.toHaveText('',{timeout:10000});await expect(admin.locator('#host-transcript')).not.toHaveText('',{timeout:10000});await expect(admin.locator('#host-audio-note')).toContainText('click the crystal ball',{ignoreCase:true});
+ await expect.poll(async()=>{const s=await snapshot();return [s.host.active,s.host.controlMode,s.host.requestCount,s.host.phase];}).toEqual([true,'operator',1,'ready']);checks.push('one Speak click starts operator session and produces one synchronized utterance');
+ await admin.locator('#host-captions').uncheck();await expect(player.locator('#host-caption')).toHaveText('');await admin.locator('#host-captions').check();await expect(player.locator('#host-caption')).not.toHaveText('');
+ await admin.locator('#host-muted').check();await admin.locator('#host-volume').fill('0.35');await expect.poll(async()=>(await snapshot()).settings.hostVolume).toBe(.35);checks.push('control-room captions, mute and volume synchronize');
+ await admin.locator('#host-effects').fill('0.75');await expect.poll(async()=>(await snapshot()).settings.hostEffects).toBe(.75);await expect(admin.locator('#host-effects-label')).toHaveText('75%');
+ await admin.locator('#host-effects-bypass').check();await expect.poll(async()=>(await snapshot()).settings.hostEffectsBypass).toBe(true);await admin.locator('#host-effects-bypass').uncheck();checks.push('voice magic intensity and dry bypass synchronize');
+ await admin.locator('#host-tone').fill('100');await expect.poll(async()=>(await snapshot()).settings.hostTone).toBe(100);await expect(admin.locator('#host-tone-label')).toHaveText('After dark');
+ await expect(player.locator('#host-caption')).toHaveText('');await new Promise(r=>setTimeout(r,3100));await admin.locator('#host-speak').click();await expect(admin.locator('#host-transcript')).toContainText(/scandalous|plausible deniability/);
+ await expect.poll(()=>player.locator('body').innerText()).toBe('');if(await player.evaluate(()=>window.__stageTextCalls)!==0)throw new Error('Text was drawn on TV canvas');checks.push('tone changes live, clears prior reply, and TV has no visible DOM or canvas text');
+ await admin.locator('#host-tone').fill('0');await expect.poll(async()=>(await snapshot()).settings.hostTone).toBe(0);await expect(admin.locator('#host-tone-label')).toHaveText('Little monsters');
+ await player.locator('#stage').click();await expect.poll(()=>player.evaluate(()=>!!document.fullscreenElement)).toBe(true);await expect(admin.locator('#host-audio-note')).not.toContainText('For sound:');await player.evaluate(()=>document.exitFullscreen());checks.push('clicking the crystal ball enables voice and fullscreen without visible TV controls');
+ await mkdir('work',{recursive:true});await admin.screenshot({path:'work/host-admin.png',fullPage:true});await player.screenshot({path:'work/host-player.png'});
+ await admin.locator('#pause').click();await expect.poll(async()=>(await snapshot()).host.active).toBe(false);await expect(player.locator('#host-caption')).toHaveText('');await admin.locator('#pause').click();checks.push('pause cancels session and clears content');
+ await admin.locator('#host-speak').click();await expect(player.locator('#host-caption')).not.toHaveText('');await admin.locator('#host-stop').click();await expect(player.locator('#host-caption')).toHaveText('');checks.push('stop clears utterance');
+ await admin.locator('#host-speak').click();await expect(player.locator('#host-caption')).not.toHaveText('');await admin.locator('#host-control-mode').selectOption('auto');
+ await expect.poll(async()=>{const s=await snapshot();return [s.settings.hostControlMode,s.host.active];}).toEqual(['auto',false]);await expect(player.locator('#host-caption')).toHaveText('');await expect(admin.locator('#host-start')).toBeVisible();
+ await admin.locator('#host-start').click();await expect.poll(async()=>{const s=await snapshot();return [s.host.active,s.host.controlMode,s.host.requestCount];}).toEqual([true,'auto',0]);
+ await admin.locator('#host-speak').click();await expect(player.locator('#host-caption')).not.toHaveText('');await expect.poll(async()=>(await snapshot()).host.phase).toBe('ready');
+ await admin.locator('#host-control-mode').selectOption('operator');await expect.poll(async()=>(await snapshot()).host.active).toBe(false);await expect(player.locator('#host-caption')).toHaveText('');checks.push('auto starts explicitly, supports Speak now, and mode switching cancels either session');
+ await admin.locator('#host-speak').click();await admin.locator('[data-scene="jungle"]').click();await expect(admin.locator('#host-panel')).toBeHidden();await expect(player.locator('#host-caption')).toHaveText('');
+ for(const scene of ['depths','space','jungle']){await admin.locator(`[data-scene="${scene}"]`).click();await expect.poll(async()=>(await snapshot()).settings.scene).toBe(scene);}
+ checks.push('scene changes cancel host and preserve original worlds');
+ await admin.locator('[data-scene="spooky"]').click();await admin.locator('#camera-toggle').click();await expect(admin.locator('#camera-note')).toContainText('fake',{timeout:20000});await expect(player.locator('#camera-video')).toBeHidden();
+ await admin.locator('#camera-toggle').click();await expect.poll(()=>player.locator('#camera-video').evaluate(v=>v.srcObject===null)).toBe(true);checks.push('synthetic camera remains hidden and releases on stop');
+ await admin.locator('#host-speak').click();await player.close();await expect.poll(async()=>(await snapshot()).host.active).toBe(false);checks.push('player disconnect ends session');
+ state=await snapshot();if(state.host.active||state.settings.cameraOn||state.playerConnected)throw new Error('Session or camera left active');
+ if(external.length||errors.length)throw new Error(JSON.stringify({external,errors}));
+ const report={passed:true,checks,externalRequests:external,browserErrors:errors,limitations:'Synthetic camera only; no live OpenAI calls, real visitors, audio quality or physical TV validation.'};
+ await writeFile(resolve('work/host-browser-smoke.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+ await context.close();
+} finally {await browser?.close();await app.close();await rm(temp,{recursive:true,force:true});}

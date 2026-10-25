@@ -1,0 +1,31 @@
+# Rebuild dependencies, assets, and packages from the preserved source.
+node_modules
+dist/
+build/
+work/
+data/
+.cache/
+coverage/
+test-results/
+playwright-report/
+**/runtime/node
+**/runtime/node.exe
+**/public/wasm/
+**/public/models/*.task
+**/public/models/pose-model-card.pdf
+*.zip
+*.app/
+*.download
+.DS_Store
+npm-debug.log*
+launcher.log
+
+# Never commit local credentials or configuration secrets.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.aws/
+.ssh/

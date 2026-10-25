@@ -1,0 +1,1726 @@
+{
+  "version": 2,
+  "stage": [
+    1280,
+    720
+  ],
+  "artDirection": "Original dimensional painted family adventure",
+  "jungleActor": "Original blue-and-gold macaw, two independent wing poses; monkey request blocked by output moderation and stopped",
+  "animation": "Independent poses with transform animation, anticipation, source trails and success reactions; not frame-perfect generated animation",
+  "assets": [
+    {
+      "name": "jungle-backdrop",
+      "file": "jungle-backdrop.webp",
+      "source": "jungle-backdrop-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1672,
+      "height": 941,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 517146,
+      "sha256": "b28640225818231d6566320845ce29401cfc33d64819e6bc260c5c1ae938de62"
+    },
+    {
+      "name": "jungle-foreground",
+      "file": "jungle-foreground.webp",
+      "source": "jungle-foreground-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1280,
+      "height": 720,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 327758,
+      "sha256": "0cb9eda989dd480aef8ee7c4bd2402c14be40eadcb76fd2a256679ba41910110"
+    },
+    {
+      "name": "jungle-route",
+      "file": "jungle-route.webp",
+      "source": "jungle-route-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 108074,
+      "sha256": "5250d24cc16e84f8f677e4d3c1980ad73aa42210f68f88723a9d11211c5b1d6d"
+    },
+    {
+      "name": "depths-backdrop",
+      "file": "depths-backdrop.webp",
+      "source": "depths-backdrop-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1672,
+      "height": 941,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 388768,
+      "sha256": "a1d700fe1f0f567ca76f8df578b7344fcc1a06534e173b2d43fc899deb354a29"
+    },
+    {
+      "name": "depths-foreground",
+      "file": "depths-foreground.webp",
+      "source": "depths-foreground-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1280,
+      "height": 720,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 256786,
+      "sha256": "d627a3c513316f9096a9e9d3e14b88564d260ee449ca588b7e5d2f7710f65591"
+    },
+    {
+      "name": "depths-route",
+      "file": "depths-route.webp",
+      "source": "depths-route-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 76674,
+      "sha256": "1a120af901a5222c5ca59dd67e6ea4f4a600205d4b709f3b5b5579d4824c729d"
+    },
+    {
+      "name": "space-backdrop",
+      "file": "space-backdrop.webp",
+      "source": "space-backdrop-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1672,
+      "height": 941,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 356394,
+      "sha256": "731172bbda10acc2dca982bff6bc6edd46e3d823d454ee5d7f13e7d08834a30b"
+    },
+    {
+      "name": "space-foreground",
+      "file": "space-foreground.webp",
+      "source": "space-foreground-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "width": 1280,
+      "height": 720,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 156610,
+      "sha256": "4afd80ef7909c66b083ed81a4ed31bf2f1bbe8473b52104c1aeb358638166d85"
+    },
+    {
+      "name": "space-route",
+      "file": "space-route.webp",
+      "source": "space-route-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 48694,
+      "sha256": "3919e2d4d3ca3b2548428770cf9ccf35f430a459d779353ae09fa084cb77a9a9"
+    },
+    {
+      "name": "jungle-candy",
+      "file": "jungle-candy.webp",
+      "source": "jungle-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        770,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        770,
+        674
+      ],
+      "width": 392,
+      "height": 344,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 32060,
+      "sha256": "ce55b45c2e54371cf566204649b645b6cf486d4fde3de4d22fcd3821fcae15d9"
+    },
+    {
+      "name": "jungle-star",
+      "file": "jungle-star.webp",
+      "source": "jungle-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        770,
+        0,
+        1510,
+        724
+      ],
+      "alphaBounds": [
+        1,
+        0,
+        740,
+        694
+      ],
+      "width": 392,
+      "height": 369,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 42918,
+      "sha256": "79f74437979945e1b5aba3346b226373a494f650b468be2d7cfa43619b2ff916"
+    },
+    {
+      "name": "jungle-bubble",
+      "file": "jungle-bubble.webp",
+      "source": "jungle-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1510,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        13,
+        649,
+        708
+      ],
+      "width": 367,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 44598,
+      "sha256": "9355158cef93631a42a5df5b818ee991bd984fbbe753231787db773d81231fa7"
+    },
+    {
+      "name": "depths-candy",
+      "file": "depths-candy.webp",
+      "source": "depths-collectibles-source.png",
+      "sourceSize": [
+        1968,
+        799
+      ],
+      "crop": [
+        0,
+        0,
+        660,
+        799
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        660,
+        775
+      ],
+      "width": 335,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 36044,
+      "sha256": "94666f0f6b612cc12d4acb4332976af91d947919f2d5262aa185738e50f6d8c9"
+    },
+    {
+      "name": "depths-star",
+      "file": "depths-star.webp",
+      "source": "depths-collectibles-source.png",
+      "sourceSize": [
+        1968,
+        799
+      ],
+      "crop": [
+        660,
+        0,
+        1340,
+        799
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        680,
+        783
+      ],
+      "width": 341,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 38292,
+      "sha256": "4660ec3c31bd6605e2da62baa90a4130e7298214f8f80291c14f0bf9e8cbaa0f"
+    },
+    {
+      "name": "depths-bubble",
+      "file": "depths-bubble.webp",
+      "source": "depths-collectibles-source.png",
+      "sourceSize": [
+        1968,
+        799
+      ],
+      "crop": [
+        1340,
+        0,
+        1968,
+        799
+      ],
+      "alphaBounds": [
+        3,
+        36,
+        610,
+        777
+      ],
+      "width": 323,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 50328,
+      "sha256": "f909f575f840c29a1b562e1636672d7a9b1b5d91c0af08fa66009881935b15ee"
+    },
+    {
+      "name": "space-candy",
+      "file": "space-candy.webp",
+      "source": "space-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        770,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        756,
+        724
+      ],
+      "width": 392,
+      "height": 376,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 30254,
+      "sha256": "c406b84c087d865e8725a56d4b1c3fa02079f4bc58bc2fbd5f41789567b88747"
+    },
+    {
+      "name": "space-star",
+      "file": "space-star.webp",
+      "source": "space-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        770,
+        0,
+        1370,
+        724
+      ],
+      "alphaBounds": [
+        5,
+        14,
+        596,
+        700
+      ],
+      "width": 339,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 30970,
+      "sha256": "26f3c1cf079b7aedf21f19ead04fc69a9f2f19c6dc5aeb499acb06219918f066"
+    },
+    {
+      "name": "space-bubble",
+      "file": "space-bubble.webp",
+      "source": "space-collectibles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1370,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        13,
+        22,
+        774,
+        692
+      ],
+      "width": 392,
+      "height": 346,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 30638,
+      "sha256": "922ad25690c558b6532fb9fad7ea6158b89e886fd2c9aa804a8f54d26fc110b4"
+    },
+    {
+      "name": "jungle-prop0",
+      "file": "jungle-prop0.webp",
+      "source": "jungle-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        720,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        720,
+        724
+      ],
+      "width": 390,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 79174,
+      "sha256": "063da00146bd2c20cf74e60855224a0ffcd9195d09ac9611d37a490dfeedcc32"
+    },
+    {
+      "name": "jungle-prop1",
+      "file": "jungle-prop1.webp",
+      "source": "jungle-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        720,
+        0,
+        1450,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        23,
+        730,
+        724
+      ],
+      "width": 392,
+      "height": 377,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 63752,
+      "sha256": "471a91056511d2e3bf1885d05d4d43f95353e8893b2ab66eab721be149c597ff"
+    },
+    {
+      "name": "jungle-prop2",
+      "file": "jungle-prop2.webp",
+      "source": "jungle-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1450,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        716,
+        724
+      ],
+      "width": 388,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 59370,
+      "sha256": "35d6236a282552b0edd1a65c779035ff1c6e1d97bf5411bde45a32a4f54dc590"
+    },
+    {
+      "name": "depths-prop0",
+      "file": "depths-prop0.webp",
+      "source": "depths-midground-source.png",
+      "sourceSize": [
+        1942,
+        809
+      ],
+      "crop": [
+        0,
+        0,
+        700,
+        809
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        700,
+        786
+      ],
+      "width": 347,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 53528,
+      "sha256": "67da56ff90cd704142f12104164863f54e1a83ab6c00c3bab3863479adb92bbf"
+    },
+    {
+      "name": "depths-prop1",
+      "file": "depths-prop1.webp",
+      "source": "depths-midground-source.png",
+      "sourceSize": [
+        1942,
+        809
+      ],
+      "crop": [
+        700,
+        0,
+        1210,
+        809
+      ],
+      "alphaBounds": [
+        1,
+        29,
+        510,
+        793
+      ],
+      "width": 264,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 43700,
+      "sha256": "f94f2fd3c8ee6045b89a5eb5fb907a8c8de17a238435cf9b110022b2933b29b4"
+    },
+    {
+      "name": "depths-prop2",
+      "file": "depths-prop2.webp",
+      "source": "depths-midground-source.png",
+      "sourceSize": [
+        1942,
+        809
+      ],
+      "crop": [
+        1210,
+        0,
+        1942,
+        809
+      ],
+      "alphaBounds": [
+        1,
+        43,
+        705,
+        791
+      ],
+      "width": 369,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 76460,
+      "sha256": "0a4da3033587b8c3d7ccd8f8d07d416cb9d201e19baf0fd3aed4713f5c7736be"
+    },
+    {
+      "name": "space-prop0",
+      "file": "space-prop0.webp",
+      "source": "space-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        780,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        778,
+        724
+      ],
+      "width": 392,
+      "height": 365,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 46178,
+      "sha256": "01045c74b77beffbe8aa86f47e9161203fb3dbcfff230614989a1aa61ff6dda0"
+    },
+    {
+      "name": "space-prop1",
+      "file": "space-prop1.webp",
+      "source": "space-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        780,
+        0,
+        1360,
+        724
+      ],
+      "alphaBounds": [
+        41,
+        21,
+        566,
+        724
+      ],
+      "width": 295,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 40014,
+      "sha256": "1426b47aa8764ee3d0b93f198695615070f75ce5428adc1d6afdeca2a8b66678"
+    },
+    {
+      "name": "space-prop2",
+      "file": "space-prop2.webp",
+      "source": "space-midground-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1360,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        797,
+        707
+      ],
+      "width": 392,
+      "height": 344,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 53320,
+      "sha256": "ca695b2d84ab27b4d95bf95eca3fc00572750afca00f2090d4a455c194d18caa"
+    },
+    {
+      "name": "depths-duck",
+      "file": "depths-duck.webp",
+      "source": "depths-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        845,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        845,
+        724
+      ],
+      "width": 392,
+      "height": 337,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 35860,
+      "sha256": "ffb63f575e7ad6e2485cc1d66813b5ba9c6931336c65ab81440b5fb7f06a8709"
+    },
+    {
+      "name": "depths-jump",
+      "file": "depths-jump.webp",
+      "source": "depths-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        845,
+        0,
+        1650,
+        724
+      ],
+      "alphaBounds": [
+        1,
+        21,
+        805,
+        708
+      ],
+      "width": 392,
+      "height": 336,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 35592,
+      "sha256": "f0f32af3cabec4a28fde201d5f1bedc18c2fe50a7ce5558732b8852638205bc2"
+    },
+    {
+      "name": "depths-dodge",
+      "file": "depths-dodge.webp",
+      "source": "depths-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1650,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        508,
+        688
+      ],
+      "width": 292,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 35542,
+      "sha256": "9519b9f45431a6f48c8e039b9a5bfcc1a8aa9a2cce907d78e13f9d34acbc328b"
+    },
+    {
+      "name": "space-duck",
+      "file": "space-duck.webp",
+      "source": "space-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        785,
+        724
+      ],
+      "alphaBounds": [
+        19,
+        41,
+        785,
+        696
+      ],
+      "width": 392,
+      "height": 336,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 23102,
+      "sha256": "5d7c2a86dd9d9f67bf7c5a46b852b772ec9bcde40151990386d67d882afd9e18"
+    },
+    {
+      "name": "space-jump",
+      "file": "space-jump.webp",
+      "source": "space-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        785,
+        0,
+        1585,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        88,
+        792,
+        724
+      ],
+      "width": 392,
+      "height": 316,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 13834,
+      "sha256": "78927d8add93ce86c755cb3eca7be89a2324935688454e534ac20439f1de0d99"
+    },
+    {
+      "name": "space-dodge",
+      "file": "space-dodge.webp",
+      "source": "space-obstacles-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1585,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        7,
+        51,
+        559,
+        636
+      ],
+      "width": 370,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 39480,
+      "sha256": "94b6dcff20ee919bd400871779ea31ea9ab2cb9387d230f6fd7c9030b5e3a792"
+    },
+    {
+      "name": "jungle-duck",
+      "file": "jungle-duck.webp",
+      "source": "jungle-obstacles-source.png",
+      "sourceSize": [
+        2048,
+        768
+      ],
+      "crop": [
+        0,
+        0,
+        940,
+        704
+      ],
+      "alphaBounds": [
+        0,
+        13,
+        922,
+        704
+      ],
+      "width": 392,
+      "height": 296,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 49662,
+      "sha256": "9fbd36b79723f44969cc8ac0210fda89c205ab5f180a1715753aec16fc717351",
+      "separator": "x=1000-0.47*y; inspected empty diagonal gutter"
+    },
+    {
+      "name": "jungle-jump",
+      "file": "jungle-jump.webp",
+      "source": "jungle-obstacles-source.png",
+      "sourceSize": [
+        2048,
+        768
+      ],
+      "crop": [
+        680,
+        350,
+        1598,
+        730
+      ],
+      "alphaBounds": [
+        21,
+        5,
+        918,
+        380
+      ],
+      "width": 392,
+      "height": 169,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 31174,
+      "sha256": "5eb0fff45d311a3cbc66c9e6e4d6130c68a85447bc5b156cbfa1e431f59ff204",
+      "separator": "x=1000-0.47*y; inspected empty diagonal gutter"
+    },
+    {
+      "name": "jungle-dodge",
+      "file": "jungle-dodge.webp",
+      "source": "jungle-obstacles-source.png",
+      "sourceSize": [
+        2048,
+        768
+      ],
+      "crop": [
+        1598,
+        0,
+        2048,
+        730
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        438,
+        704
+      ],
+      "width": 247,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 40820,
+      "sha256": "9013e86614e01f2d5c721652a5873cf1b18756a03d44dd72cf9670dc747d1bf2",
+      "separator": "x=1000-0.47*y; inspected empty diagonal gutter"
+    },
+    {
+      "name": "space-actor0",
+      "file": "space-actor0.webp",
+      "source": "space-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        0,
+        670,
+        627
+      ],
+      "alphaBounds": [
+        0,
+        22,
+        659,
+        627
+      ],
+      "width": 520,
+      "height": 478,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 49738,
+      "sha256": "fc0be64e43d70961335522f791906487c966b5bb156b28e555344a9b153a9449"
+    },
+    {
+      "name": "space-actor1",
+      "file": "space-actor1.webp",
+      "source": "space-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        670,
+        0,
+        1254,
+        627
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        538,
+        627
+      ],
+      "width": 447,
+      "height": 520,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 59470,
+      "sha256": "3c44fde7b7c7a0987c938f72bf03b6fc62b04cb5ca2c3a667ca3a5400baed9f5"
+    },
+    {
+      "name": "space-actor2",
+      "file": "space-actor2.webp",
+      "source": "space-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        627,
+        670,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        669,
+        627
+      ],
+      "width": 520,
+      "height": 488,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 52338,
+      "sha256": "734e5aec28cba81773dfa880805b0af1eeb740eeddcc04dd5489af1a9bc3b74e"
+    },
+    {
+      "name": "space-actor3",
+      "file": "space-actor3.webp",
+      "source": "space-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        670,
+        627,
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        582,
+        627
+      ],
+      "width": 483,
+      "height": 520,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 50452,
+      "sha256": "2bc40ea84c66a93ea6f79b3c7299bf2412468772b5fe95882521bb5fe2d2fb5f"
+    },
+    {
+      "name": "depths-actor0",
+      "file": "depths-actor0.webp",
+      "source": "depths-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        0,
+        685,
+        580
+      ],
+      "alphaBounds": [
+        0,
+        17,
+        685,
+        577
+      ],
+      "width": 520,
+      "height": 427,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 44770,
+      "sha256": "fdb10ac8fe779c747c0986a932881bf7f57387be6ca8d0680b5f848111c678d7"
+    },
+    {
+      "name": "depths-actor1",
+      "file": "depths-actor1.webp",
+      "source": "depths-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        685,
+        0,
+        1254,
+        580
+      ],
+      "alphaBounds": [
+        0,
+        27,
+        569,
+        580
+      ],
+      "width": 520,
+      "height": 506,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 54986,
+      "sha256": "bff32ddfe603025d63e35b7da688fd985b0b7ac40c3213c0e73a4bb41d82498b"
+    },
+    {
+      "name": "depths-actor2",
+      "file": "depths-actor2.webp",
+      "source": "depths-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        0,
+        580,
+        565,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        4,
+        565,
+        674
+      ],
+      "width": 440,
+      "height": 520,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 44120,
+      "sha256": "e4bede4b77ed8a6be75ac96203989b4c857e47a8df69b008fc631a8740c32adf"
+    },
+    {
+      "name": "depths-actor3",
+      "file": "depths-actor3.webp",
+      "source": "depths-character-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "crop": [
+        565,
+        580,
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        689,
+        674
+      ],
+      "width": 520,
+      "height": 509,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 42524,
+      "sha256": "749e4a2b3fb595c3834437fbf119e875494568d2d7a3099cb09fea754be236ae"
+    },
+    {
+      "name": "jungle-actor0",
+      "file": "jungle-actor0.webp",
+      "source": "jungle-distant-source.png",
+      "sourceSize": [
+        1993,
+        789
+      ],
+      "crop": [
+        0,
+        0,
+        705,
+        789
+      ],
+      "alphaBounds": [
+        0,
+        11,
+        705,
+        789
+      ],
+      "width": 472,
+      "height": 520,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 67614,
+      "sha256": "261a4e6fff605657f77e941519fd3b829d7e9847a5f0126ef6ad4a3cffc91772"
+    },
+    {
+      "name": "jungle-actor1",
+      "file": "jungle-actor1.webp",
+      "source": "jungle-distant-source.png",
+      "sourceSize": [
+        1993,
+        789
+      ],
+      "crop": [
+        705,
+        0,
+        1505,
+        789
+      ],
+      "alphaBounds": [
+        0,
+        21,
+        800,
+        769
+      ],
+      "width": 520,
+      "height": 487,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 58308,
+      "sha256": "7018c013b8d333243d352cd11bc1824bed042fd43b22515542babe2742efa49d"
+    },
+    {
+      "name": "jungle-distant0",
+      "file": "jungle-distant0.webp",
+      "source": "jungle-distant-source.png",
+      "sourceSize": [
+        1993,
+        789
+      ],
+      "crop": [
+        1505,
+        0,
+        1993,
+        789
+      ],
+      "alphaBounds": [
+        1,
+        19,
+        488,
+        772
+      ],
+      "width": 339,
+      "height": 520,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 51376,
+      "sha256": "846d5639dcde9098e4cd63e3587b751956871b8347d0b854551bfcf1e01245e5"
+    },
+    {
+      "name": "depths-distant0",
+      "file": "depths-distant0.webp",
+      "source": "depths-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        695,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        16,
+        695,
+        708
+      ],
+      "width": 392,
+      "height": 390,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 48646,
+      "sha256": "46eef8e44a211fadd89c9e9f50fecefca205ffbfbfe9082d30f774086c9a7eb9"
+    },
+    {
+      "name": "depths-distant1",
+      "file": "depths-distant1.webp",
+      "source": "depths-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        695,
+        0,
+        1440,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        21,
+        745,
+        724
+      ],
+      "width": 392,
+      "height": 370,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 36534,
+      "sha256": "41f45d1d1905211cb93f9b6ccd53db853c906299928dd3ed444cbc8881fe4b04"
+    },
+    {
+      "name": "depths-distant2",
+      "file": "depths-distant2.webp",
+      "source": "depths-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1440,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        19,
+        731,
+        724
+      ],
+      "width": 392,
+      "height": 378,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 23938,
+      "sha256": "925b15eb00b498658bbe7a6c2771ecf7e1dcb91878fcb6237116a07c41d6e49a"
+    },
+    {
+      "name": "space-distant0",
+      "file": "space-distant0.webp",
+      "source": "space-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        780,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        780,
+        724
+      ],
+      "width": 392,
+      "height": 360,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 36604,
+      "sha256": "e3d58d8613fb0ea87cdc758c44b311763f60376a359f458046fcb4cc2b0c86fa"
+    },
+    {
+      "name": "space-distant1",
+      "file": "space-distant1.webp",
+      "source": "space-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        780,
+        0,
+        1475,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        694,
+        724
+      ],
+      "width": 381,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 43730,
+      "sha256": "240f91d54d6e46cc7938893973a026d27e810c4ae0061302dc256caa30c546ca"
+    },
+    {
+      "name": "space-distant2",
+      "file": "space-distant2.webp",
+      "source": "space-distant-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1475,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        2,
+        7,
+        684,
+        698
+      ],
+      "width": 387,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 47914,
+      "sha256": "f5b007cbdc32e85bc7a9465c5b170ee5efd5e8b1eb7287239a436b71b3de5be3"
+    },
+    {
+      "name": "jungle-atmosphere",
+      "file": "jungle-atmosphere.webp",
+      "source": "shared-atmosphere-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        900,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        17,
+        900,
+        724
+      ],
+      "width": 776,
+      "height": 611,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 107560,
+      "sha256": "c216c266285cd7e91e97c55368a38e603e6540d3e71c78dce2eed5c159f216c9"
+    },
+    {
+      "name": "depths-atmosphere",
+      "file": "depths-atmosphere.webp",
+      "source": "shared-atmosphere-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        900,
+        0,
+        1480,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        580,
+        724
+      ],
+      "width": 588,
+      "height": 732,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 148106,
+      "sha256": "900789ad3abf6f4f4ac14ac21b4c8ad70a886e13b3dcd6626e8da58ac4fc4fc2"
+    },
+    {
+      "name": "space-atmosphere",
+      "file": "space-atmosphere.webp",
+      "source": "shared-atmosphere-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1480,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        692,
+        724
+      ],
+      "width": 700,
+      "height": 732,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 150766,
+      "sha256": "68dde3b5be031abbadfe630038a02cd1415471ed9ec6cb4688466bcee9035e2a"
+    },
+    {
+      "name": "jungle-celebration",
+      "file": "jungle-celebration.webp",
+      "source": "shared-celebration-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0,
+        720,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        720,
+        724
+      ],
+      "width": 390,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 95320,
+      "sha256": "784cef44dcbb95ded5b13c048f5a0546afd527860a6c1482d9636efcc5ca4d6b"
+    },
+    {
+      "name": "depths-celebration",
+      "file": "depths-celebration.webp",
+      "source": "shared-celebration-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        720,
+        0,
+        1450,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        3,
+        730,
+        724
+      ],
+      "width": 392,
+      "height": 387,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 83890,
+      "sha256": "5d678d5aebd53f2a1af783c55c6b326db4117f81ad9134f2e8c7c906fa99d954"
+    },
+    {
+      "name": "space-celebration",
+      "file": "space-celebration.webp",
+      "source": "shared-celebration-source.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        1450,
+        0,
+        2172,
+        724
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        722,
+        724
+      ],
+      "width": 391,
+      "height": 392,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "bytes": 82922,
+      "sha256": "1aee082d63edd794fcb10623eefcbe5f3ec1d02002263f664d0c961b10082a71"
+    }
+  ]
+}

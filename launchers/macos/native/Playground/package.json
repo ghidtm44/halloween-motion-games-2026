@@ -1,0 +1,23 @@
+{
+  "name": "moonlight-motion-simple-v1",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server.mjs",
+    "assets": "node scripts/install-assets.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.32",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "typescript": "~5.9.3",
+    "vite": "^6.4.1"
+  }
+}

@@ -1,0 +1,19 @@
+SIMPLE PLAYGROUND — SPOOKY HOST
+
+Open Simple Playground Spooky Host.app to start the bundled local server and open the control room and player in Chrome. The build-directory copy is named Simple Playground.app. No Terminal or dependency commands are needed. Google Chrome must be installed in Applications.
+
+Choose Start camera in Chrome when ready. The app never grants camera permission or captures audio. Move the player window onto the TV and click Fullscreen.
+
+Choose Spooky Host in the control room for the crystal ball. Start with Scripted rehearsal, which works without an API key. In the player, choose Enable host voice for sound. Operator mode speaks when you choose Speak; Auto mode waits for a locally tracked guest to settle after you choose Start automatic. The camera stays off until you start it. The player shows the crystal ball and speaking face.
+
+For the live host, a key can be saved once with Simple Playground > Save Spooky Host API Key…. It is stored in your Mac login Keychain. Restart the app after saving; later launches read it automatically. If macOS needs permission to read a saved key, choose Authorize Saved Spooky Host Key…. Credentials are never bundled with the app or entered in the browser.
+
+Selecting Spooky Host alone does not send pictures. For the live host, select AI host · OpenAI, then choose Speak for one remark in Operator mode, or Start automatic in Auto mode. These actions send costume stills to OpenAI for a brief remark and spoken response. Stop the session or camera to stop new observations. Internet access and API usage are required for the live host; the original scenes and Scripted rehearsal work offline.
+
+Use Simple Playground > Quit Simple Playground, its Dock Quit command, or the Quit Playground button to stop a server started by this app. Closing the small launcher window only hides it. Reopening the app shows the existing launcher without starting a second server.
+
+If another compatible Spooky Host launcher already owns the local server, this app can reuse it and leaves that server running when it quits. If an older launcher is using the port, quit that older launcher yourself before opening this app. The app does not stop or replace other apps.
+
+Settings and diagnostic log are stored in ~/Library/Application Support/Simple Playground.
+
+The bundled Node runtime, vision models, WASM, and runtime dependencies work offline. Real webcam, multiple people/costumes, live-host timing, and physical TV behavior still need an in-person rehearsal.

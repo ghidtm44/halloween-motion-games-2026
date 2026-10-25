@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "syntheticInputs": true,
+  "cameraUsed": false,
+  "paidApiCalls": 0,
+  "media": [
+    {
+      "file": "../media/depths.png",
+      "bytes": 1669630,
+      "sha256": "8406348235d8c58fcd2ae86ab01b58458f7900f4c3ebc6d2bb1c10b5ae0366e4",
+      "width": 1280,
+      "height": 720,
+      "format": "PNG"
+    },
+    {
+      "file": "../media/hero.png",
+      "bytes": 1226500,
+      "sha256": "db97897e864f323e8aba31a3e81dcd09f7f6caf1fd74ccebcd4d5546c6fff028",
+      "width": 1280,
+      "height": 954,
+      "format": "PNG"
+    },
+    {
+      "file": "../media/jungle.png",
+      "bytes": 1800430,
+      "sha256": "ff7bb3736390ae53e6e3ed640bdfcf3de7b2f7d0ea012cf12a884f8168d554be",
+      "width": 1280,
+      "height": 720,
+      "format": "PNG"
+    },
+    {
+      "file": "../media/motion-games.gif",
+      "bytes": 4437867,
+      "sha256": "afbdd88116bba323020cfc6e12143677f548bc54f068ab0a9b1955490526aeac",
+      "width": 640,
+      "height": 360,
+      "format": "GIF",
+      "frames": 120,
+      "durationMs": 12000,
+      "loop": 0
+    },
+    {
+      "file": "../media/space.png",
+      "bytes": 1598782,
+      "sha256": "146eeb8eb110199bf7ca6164f6647b3c86ea4b8b64db5da5d0490f04693ce1f7",
+      "width": 1280,
+      "height": 720,
+      "format": "PNG"
+    },
+    {
+      "file": "../media/spooky-host.gif",
+      "bytes": 1295908,
+      "sha256": "997842965f1810c723d75531076f4bf78ac8d28c0e0d31b3e11ddc7ab45884a7",
+      "width": 720,
+      "height": 405,
+      "format": "GIF",
+      "frames": 72,
+      "durationMs": 6000,
+      "loop": 0
+    },
+    {
+      "file": "../media/spooky-host.png",
+      "bytes": 1731138,
+      "sha256": "ec482f812876980127be477b0814ff97e1da96711a2674f7356eea33ac346a49",
+      "width": 1280,
+      "height": 720,
+      "format": "PNG"
+    }
+  ],
+  "rendererSource": "Application renderers included in this repository snapshot"
+}

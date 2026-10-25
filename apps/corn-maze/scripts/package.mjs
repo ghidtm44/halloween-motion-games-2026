@@ -1,0 +1,13 @@
+import {cp,mkdir,rm,readFile,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {resolve} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const root=fileURLToPath(new URL('..',import.meta.url));
+const stage=resolve(root,'work/portable/Moonlight Motion');
+const archive=resolve(root,'../Moonlight Motion - Mac.zip');
+await rm(stage,{recursive:true,force:true});await mkdir(stage,{recursive:true});
+for(const name of ['dist','runtime','src','public','scripts','tests','server.mjs','Start Playground.command','README.md','CORN-GAME.md','TEST-RESULTS.md','THIRD-PARTY-NOTICES.md','package.json','package-lock.json','tsconfig.json','vite.config.ts','index.html','.gitignore'])await cp(resolve(root,name),resolve(stage,name),{recursive:true});
+await mkdir(resolve(stage,'node_modules'),{recursive:true});await cp(resolve(root,'node_modules/ws'),resolve(stage,'node_modules/ws'),{recursive:true});
+const license=await readFile(resolve(root,'node_modules/ws/LICENSE'),'utf8');await writeFile(resolve(stage,'runtime/WS-LICENSE.txt'),license);
+await rm(archive,{force:true});const result=spawnSync('/usr/bin/ditto',['-c','-k','--keepParent',stage,archive],{stdio:'inherit'});if(result.status!==0)throw new Error('Archive creation failed');
+console.log(archive);

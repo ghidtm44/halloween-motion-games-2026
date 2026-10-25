@@ -1,0 +1,37 @@
+{
+  "generator": "Built-in image generation; no API key",
+  "assets": [
+    {
+      "name": "host-identity",
+      "prompt": "Use case: stylized-concept. Original premium animated-attraction character design, production raster reference portrait on a truly transparent background. A charismatic supernatural male carnival oracle, a detailed floating head and ornate small collar, friendly mischievous theatrical personality. Sculpted translucent deep teal-green skin, luminous jade irises, silver-lavender swept hair with curling wisps, expressive thick sculpted eyebrows, an elegant curled silver moustache and small pointed chin beard. Warm knowing half-smile, closed lips, face straight toward camera, symmetrical clear facial features for later articulation. Rich dimensional hand-painted 3D materials and beautiful cool ethereal rim light with subtle warm amber accents. Detailed, striking and mysterious, not horror, no gore, no skull, no licensed character resemblance, no text, no logos. Head entirely visible with generous transparent margin, square image.",
+      "source": "host-identity-source.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "10a3835ae451a34abdcbd84bd78d62f3cdcb9bf1f19e317ae0395ee6c2d59531"
+    },
+    {
+      "name": "host-stage",
+      "prompt": "Use case: stylized-concept. Original premium game/theatrical attraction backdrop, wide 16:9. An elaborate mysterious fortune-teller observatory with velvet indigo curtains, antique brass astronomical mechanisms, polished dark carved wood and a few soft candles at the outer edges. In the EXACT CENTER a large spherical empty glowing crystal ball, dark translucent teal glass with subtle violet mist inside, resting on an intricate sculpted brass stand at lower center. The sphere center is at x50%, y45%, diameter 65% of image height, with ample empty interior for a separate animated face. No person, face, letters, symbols resembling text, labels or UI anywhere. Soft cinematic volumetric lighting, dimensional tactile materials, restrained rich colors, beautifully polished high-end stylized 3D painted concept art. Full bleed landscape.",
+      "source": "host-stage-source.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "92871296348cdd315de0230d217a76bba3ced76f5b5789e2b35e6dc74df8eb17"
+    },
+    {
+      "name": "host-rig-head",
+      "prompt": "Use case: precise-object-edit. Prepare this exact original oracle portrait as the fixed upper-head layer for a 2D articulated puppet. Preserve character identity, camera, hairstyle, ears, nose, moustache, teal materials, lighting and image framing. Replace both eyeballs/eyelashes with dark recessed empty smooth eye sockets, remove both eyebrows leaving smooth teal forehead underneath. Remove the lower lip, chin/beard and collar entirely: below the moustache there should be a dark open mouth cavity and then transparency. Keep the upper lip and cheek sides. This is a technical animation component, not injury: no blood or gore. Preserve full real alpha background. No text, no extra objects.",
+      "source": "host-rig-head-source.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "434bf9cf93d5d34297bd44ba4e3310c326cdcbda938167c9bcf4feb7f41ab693"
+    },
+    {
+      "name": "host-rig-parts",
+      "prompt": "Use case: stylized-concept. Use the attached original oracle as an exact identity/material/lighting reference. Create a technical transparent animation component board, four separate groups in a 2x2 arrangement with wide clear gutters, all fully contained: top left pair of luminous jade eyeballs with pale warm sclera, same forward facing eyes as reference, NO eyelids around them; top right pair of silver-lavender eyebrows matching reference, independent sculpted hair cutouts; bottom left ONLY the lower lip, lower teeth, chin and pointed silver beard of this same teal character, front facing as one lower-jaw piece with flat top at lip, no nose/moustache/neck; bottom right the same ornate collar alone, empty above collar. Consistent original character, dimensional painted 3D surfaces, genuine alpha transparency, no labels or text. Do not draw full faces in any tile.",
+      "source": "host-rig-parts-source.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "beb2a3b47f64b7fc901113ee939a2337555c7c33ce356cd2ea682be300007e58"
+    }
+  ]
+}
